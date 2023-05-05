@@ -1,0 +1,146 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'DM Sans', sans-serif;}
+body{
+      height: 100vh;
+      background-color: #F7E9DC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.container{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 35%;
+}
+.balance{
+      width: 100%;
+      background-color: #EC755D;
+      border-radius: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 2.5rem 1.5rem;
+      color: #fff;
+}
+.balance  span{
+      font-size: 30px;
+      font-weight: bold;
+}
+.spending{
+      background-color: #FFFCF7;
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      color: hsl(25, 47%, 15%);
+}
+.spending > p{
+      font-size: 1.8em;
+      font-weight: 500;
+}
+.week{
+      display: flex;
+      justify-content: space-around;
+      align-items: end;
+      height: 300px;
+      padding: 1rem;
+}
+.day{
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      width: 7%;
+      max-height: 300px;
+      height: 280px;
+      gap: 5px;
+}
+.graph{
+      border-radius: .5rem;
+      width: 140%;
+      max-height: 110%;
+}
+.week .day:nth-child(1) .graph{
+      background-color: #EC755D;
+}
+.week .day:nth-child(2) .graph{
+      background-color: #EC755D;
+}
+.week .day:nth-child(3) .graph{
+      background-color: #EC755D;
+}
+.week .day:nth-child(4) .graph{
+      background-color: #EC755D
+}
+.week .day:nth-child(5) .graph{
+      background-color: #EC755D
+}
+.week .day:nth-child(6) .graph{
+      background-color: #EC755D
+}
+.week .day:nth-child(7) .graph{
+      background-color: #EC755D
+}
+hr{
+      border: 1px solid #f3ece2;
+      margin: 2rem 0;
+}
+.info{
+      display: flex;
+      justify-content: space-between;
+}
+.month{
+      color: hsl(28, 10%, 53%);
+}
+.month > span{
+      font-size: 60px;
+      font-weight: 700;
+      color: hsl(25, 47%, 15%);
+}
+.last-month{
+      color: hsl(28, 10%, 53%);
+      align-self: flex-end;
+      text-align: end;
+      margin-bottom: 15px;
+}
+.last-month > span{
+      font-weight: 700;
+      color: hsl(25, 47%, 15%);
+}
+.gasto{
+      background-color: hsl(25, 47%, 15%);
+      border-radius: .5rem;
+      color: #fff;
+      padding: .5rem;
+      display: none;
+      width: 180%;
+      text-align: center;
+      font-weight: 500;
+}
+
+@media(max-width: 1300px){
+      .container{
+            width: 60%;
+      }
+}
+@media(max-width: 1200px){
+      .container{
+            width: 65%;
+      }
+}
+@media(max-width: 1000px){
+      .container{
+            width: 70%;
+      }
+}
+@media(max-width: 700px){
+      .container{
+            width: 80%;
+      }
+}
+@media(max-width: 500px){
+      .container{
+            width: 90%;
+      }
+}
